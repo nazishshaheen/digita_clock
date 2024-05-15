@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    border: 1px solid rgb(88, 87, 87);
+    background-color: black;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#clock{
+    border: 2px solid rgb(113, 110, 110);
+    width: 350px;
+    height: 200px;
+    background-color: rgb(97, 97, 97);
+    overflow: hidden;
+}
+#time-container {
+    list-style-type: none;
+    font-size: 90px;
+    display: flex;
+    justify-content: center;
+}
+#time-container h3{
+    display: inline-block;
+    height: 130px;
+    text-align: center;
+    line-height: 130px;
+}
+#hours{
+    width: 40%;
+}
+#point{ 
+    display: block;
+    margin-top: -10px;
+    width: 20%;
+}
+#minute{
+    width: 40%;
+}
+#date-container{
+    text-align: center;
+    font-size: 20px;
+    /* padding-top: 9px; */
+}
+#date-container span{
+    padding: 2px; 
+}
+#seconds-container{
+    border: 1px solid white;
+    display: flex;
+    height: 15px;
+    margin-bottom: 10px;
+}
+#seconds-container p{
+    background-color: rgb(20, 105, 77);
+    height: 100%;
+    width: 16.65%;
+    visibility: hidden;
+    transition: visibility 0.5s ease;
+}
+/* Button styling */
+#setAlarm{
+    font-size: 18px;
+    padding: 7px 9px;
+    cursor: pointer;
+    background-color: rgba(97,97,97);
+    border: rgba(97,97,97);
+    color: white;
+    margin-left: 256px;
+}
